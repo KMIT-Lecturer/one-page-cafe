@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 100px;
+    background-color: #E9E7E8;
+}
+
+header {
+    height: 160px;
+    /* text-align: center; */
+    /* background-color: lightpink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(48, 58, 33);
+    /* margin: auto; */
+}
+
+.sub-main-title {
+    margin-top: 32px;
+}
