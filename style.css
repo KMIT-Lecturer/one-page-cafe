@@ -2,28 +2,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     padding: 0 100px;
     background-color: #E9E7E8;
+    
 }
 
 header {
-    height: 160px;
+    height: 220px;
     /* text-align: center; */
     /* background-color: lightpink; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('/one-page-cafe/img/images\ \(2\).jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 h1 {
-    color: rgb(48, 58, 33);
+    /* color: rgb(48, 58, 33); */
     /* margin: auto; */
+    font-family: "Permanent Marker", cursive;
+    color: #E9E7E8;
+    font-size: 100px;
+    color: #dd9974;
 }
 
 .sub-main-title {
-    margin-top: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-top: 24px; */
+    color: #E9E7E8;
+    font-size: 32px;
+}
+
+nav {
+    height: 60px;
+    
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #E9E7E8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #5E5653;
+    cursor: pointer;
+    padding: 4px 16px;
+    border-radius: 8px;
+    background-color: #dd9974;
+}
+
+aside {
+    /* display: flex; */
+}
+
+section {
+    height: 600px;
+}
+
+footer {
+    height: 80px;
 }
