@@ -131,3 +131,97 @@ h4 {
     color: #dd9974; 
     font-size: 1.4em;
 }
+
+/* ===== ФОРМА ЗВОРОТНОГО ЗВ'ЯЗКУ ===== */
+form {
+    max-width: 640px;
+    background-color: #fff;
+    border-left: 6px solid #dd9974;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    padding: 24px 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    border: 2px solid #E9E7E8;
+    border-radius: 8px;
+    padding: 12px 20px 16px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+    color: #5E5653;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.option-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+}
+
+label {
+    font-weight: bold;
+    color: #5E5653;
+}
+
+.option-row label {
+    font-weight: normal;
+}
+
+.required::after {
+    content: " *";
+    color: #c0392b;
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 2px solid #5E5653;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 0;
+    accent-color: #dd9974;
+}
+
+input[type="color"] {
+    width: 80px;
+    height: 40px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #dd9974;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #dd9974;
+    box-shadow: 0 0 0 3px rgba(221, 153, 116, .35);
+}

@@ -90,16 +90,18 @@
             <p>Залиште відгук або запитання - ми обовʼязково відповімо</p>
             <form id="feddback-form" action="#" method="post">
                 <div class="form-row">
-                    <label for="fullname">Ваше імʼя</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="напишіть Ваше імʼя">
+                    <label for="fullname" class="required">Ваше імʼя</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="напишіть Ваше імʼя" required 
+                    minlength="2" maxlength="60">
                 </div>
                 <div class="form-row">
-                    <label for="email">Електронна пошта</label>
-                    <input type="email" id="email" name="email" placeholder="name@example.com">
+                    <label for="email" class="required">Електронна пошта</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
                 </div>
                 <div class="form-row">
-                    <label for="phone">Телефон</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+380 XX XXX XX XX">
+                    <label for="phone" class="required">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+380 XX XXX XX XX"
+                    pattern="\+380[0-9]{9}" title="Формат: +380 і ще 9 цифр, наприклад +380501234567">
                 </div>
                 <div class="form-row">
                     <label for="instagram">Ваш Instagram (за бажанням)</label>
@@ -184,8 +186,37 @@
                         <option value="Південний вокзал"></option>
                     </datalist>
                 </div>
+
+                <div class="form-row">
+                    <label for="message" class="required">Ваше повідомлення</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Розкажіть, що вам сподобалось або що можна покращити"
+                    required minlength="10"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="raiting">Загальна оцінка: <output id="rating-value">5</output> з 10</label>
+                    <input type="range" id="raiting" name="raiting" min="1" max="10" value="5">
+                </div>
+
+                <div class="form-row">
+                    <label for="mug-color">Улюблений колір чашки</label>
+                    <input type="color" id="mug-color" name="mug_color" value="#dd9974">
+                </div>
+
+                <div class="form-row">
+                    <label for="photo">Фото (за бажанням)</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+
+                <input type="hidden" name="source" value="one-page-cafe">
+
+                <div class="option-row">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree" class="required">Я погоджуюсь на обробку моїх даних</label>
+                </div>
                 
                 <div class="form-buttons">
+                    <!-- <input type="submit"> -->
                     <button type="submit" class="btn">Надіслати</button>
                     <button type="reset" class="btn btn-secondary">Очистити</button>
                 </div>
