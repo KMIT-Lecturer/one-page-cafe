@@ -27,7 +27,7 @@
         <!-- Навшгаційне меню -->
         <a href="#about" class="navLink">Про нас</a>
         <a href="#story" class="navLink">Історія засновника</a>
-        <a href="#s003" class="navLink">Section3</a>
+        <a href="#s003" class="navLink">Контакти</a>
         <a href="#s004" class="navLink">Section4</a>
         <a href="#aside1" class="navLink">Aside</a>
         <a href="#footer1" class="navLink">Footer</a>
@@ -86,7 +86,112 @@
               </address>
         </section >
         <section id="s003">
-            <h4>Section 3</h4>
+            <h4>Зворотний зв'язок</h4>
+            <p>Залиште відгук або запитання - ми обовʼязково відповімо</p>
+            <form id="feddback-form" action="#" method="post">
+                <div class="form-row">
+                    <label for="fullname">Ваше імʼя</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="напишіть Ваше імʼя">
+                </div>
+                <div class="form-row">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+380 XX XXX XX XX">
+                </div>
+                <div class="form-row">
+                    <label for="instagram">Ваш Instagram (за бажанням)</label>
+                    <input type="url" name="instagram" id="instagram" placeholder="https://instagram.com/...">
+                </div>
+                <div class="form-grid">
+                    <div class="form-row">
+                        <label for="visit-date">Дата візиту</label>
+                        <input type="date" id="visit-date" name="visit_date">
+                    </div>
+                    <div class="form-row">
+                        <label for="visit-time">Час</label>
+                        <input type="time" id="visit-time" name="visit_time">
+                    </div>
+                    <div class="form-row">
+                        <label for="guests">Кількість гостей</label>
+                        <input type="number" id="guests" name="guests" min="1" max="10" step="1" value="2">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="password">Пароль</label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <fieldset>
+                    <legend>Тип звернення</legend>
+                    <div class="option-row">
+                        
+                        <input type="radio" id="type-review" name="request_type" value="review" checked>
+                        <label for="type-review">Відгук</label>
+                    </div>
+                    <div class="option-row">
+                        <input type="radio" id="type-question" name="request_type" value="question">
+                        <label for="type-question">Запитання</label>
+                    </div>
+                    <div class="option-row">
+                        <input type="radio" id="type-complaint" name="request_type" value="complaint">
+                        <label for="type-complaint">Скарга</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Що вам сподобалось?</legend>
+                    <div class="option-row">
+                        <input type="checkbox" id="like-coffee" name="likes" value="coffee" checked>
+                        <label for="like-coffee">Кава</label>
+                    </div>
+                    <div class="option-row">
+                        <input type="checkbox" id="like-food" name="likes" value="food">
+                        <label for="like-food">Їжа</label>
+                    </div>
+                    <div class="option-row">
+                        <input type="checkbox" id="like-service" name="likes" value="service">
+                        <label for="like-service">Обслуговування</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-row">
+                    <label for="drinks">Улюблений напій</label>
+                    <select name="drinks" id="drinks">
+                        <option value="">- Оберіть напій -</option>
+                        <optgroup label="Кава">
+                            <option value="espresso">Еспресо</option>
+                            <option value="v60">V60</option>
+                            <option value="flat-white">Флет вайт</option>
+                        </optgroup>
+                        <optgroup label="Не кава">
+                            <option value="tea">Чай</option>
+                            <option value="cocoa">Какао</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="metro">Найближча станція метро</label>
+                    <input list="metro-list" id="metro" name="metro" placeholder="Почніть вводити...">
+                    <datalist id="metro-list">
+                        <option value="Архітектора Бекетова"></option>
+                        <option value="Історичний музей"></option>
+                        <option value="Університет"></option>
+                        <option value="Холодна гора"></option>
+                        <option value="Південний вокзал"></option>
+                    </datalist>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="btn">Надіслати</button>
+                    <button type="reset" class="btn btn-secondary">Очистити</button>
+                </div>
+                <div class="form-row"></div>
+
+            </form>
         </section >
         <section id="s004">
             <h4>Section 4</h4>
